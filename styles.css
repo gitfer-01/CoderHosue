@@ -1,0 +1,588 @@
+:root {
+    --verde: #FFFF00;
+    --azul: #254166;
+    --azulOscuro: #1A375D;
+    --azulClaro: #4E7AB4;
+    --blanco: #FFFFFF;
+    --rojo: #EB6D3E;
+    --verdeClaro: #E7EB1D;
+    --verOscuro: #B4B42A;
+}
+
+@font-face {
+    font-family: 'nexa';
+    src: url('./fuentes/Nexa-Heavy.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'nexa-light';
+    src: url('./fuentes/Nexa-ExtraLight.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'avenir';
+    src: url('./fuentes/Avenir-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'avenir-light';
+    src: url('./fuentes/Avenir-Light.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'astetico';
+    src: url('./fuentes/aestetico-regular.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.navbar {
+    background-color: var(--azulOscuro) !important;
+    padding-top: 30px;
+    font-family: 'avenir-light', sans-serif;
+}
+
+.navbar #flecha {
+    height: 12px;
+    margin-left: 10px;
+}
+
+.navbar #logo {
+    height: 60px;
+    position: relative;
+    top: 10px;
+}
+
+.navbar a {
+    color: var(--blanco) !important;
+}
+
+#banner {
+    background-color: var(--azulOscuro);
+    padding-top: 100px;
+}
+
+#banner h2 {
+    color: var(--verde);
+    font-size: 75px;
+    font-weight: 600;
+    font-family: 'nexa', sans-serif;
+}
+
+#banner p {
+    color: var(--blanco);
+    font-family: 'avenir', sans-serif;
+    width: 78%;
+    font-size: 18px;
+    text-align: start;
+}
+
+#banner img {
+    height: 600px;
+    position: relative;
+    top: -75px;
+}
+
+#banner .btn {
+    background-color: var(--verde);
+    color: var(--azulOscuro);
+    font-weight: 600;
+    font-family: 'nexa', sans-serif;
+    border: none;
+    border-radius: 32px;
+    font-size: 32px;
+    padding: 6px 44px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    margin-top: 15px;
+}
+
+#vernoticias {
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'nexa';
+    cursor: pointer;
+    position: relative;
+}
+
+#vernoticias img {
+    height: 35px;
+    margin-left: 15px;
+}
+
+
+#vernoticias2 {
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'nexa';
+    cursor: pointer;
+    position: relative;
+    top: 100px;
+}
+
+#vernoticias2 img {
+    height: 35px;
+    margin-left: 15px;
+}
+
+#encuestas h2 {
+    font-size: 36px;
+    font-weight: 600;
+    font-family: 'nexa', sans-serif;
+    color: var(--azulOscuro);
+}
+
+
+
+.card {
+    border-radius: 32px;
+    background-color: var(--verde);
+    border: none;
+
+}
+
+.card-img-top {
+    border-radius: 32px;
+}
+
+.card-title {
+    font-size: 24px;
+    font-weight: 600;
+    font-family: 'nexa', sans-serif;
+    color: var(--azulOscuro);
+}
+
+#reloj {
+    height: 28px;
+    margin-right: 10px;
+}
+
+#encuestas .card-text {
+    font-size: 22px;
+    font-weight: 100;
+    font-family: 'avenir-light', sans-serif;
+    color: var(--azulOscuro);
+    margin-left: 14px;
+}
+
+#row-encuestas {
+    width: 90%;
+}
+
+#encuestas button {
+    background-color: var(--azulOscuro);
+    color: var(--blanco);
+    font-weight: 600;
+    font-family: 'nexa', sans-serif;
+    border: none;
+    border-radius: 32px;
+    font-size: 20px;
+    width: 100%;
+    padding: 6px 0;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.padel {
+    background-color: var(--azulClaro);
+    padding: 6px 0;
+    font-size: 16px;
+    font-family: 'avenir';
+    font-weight: 400;
+}
+
+.publicacion {
+    background-color: var(--verdeClaro);
+    padding: 6px 0;
+    font-size: 16px;
+    font-family: 'avenir';
+    font-weight: 400;
+    width: 44%;
+    color: var(--azulOscuro) !important;
+
+}
+
+.basque {
+    background-color: var(--rojo);
+    padding: 6px 0;
+    font-size: 16px;
+    font-family: 'avenir';
+    font-weight: 400;
+}
+
+#row-encuestas h3 {
+    font-size: 24px;
+    font-weight: 600;
+    font-family: 'nexa', sans-serif;
+    color: var(--azulOscuro);
+
+}
+
+#row-encuestas .parrafo {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'avenir', sans-serif;
+    color: var(--azulOscuro);
+    margin-top: 10px;
+}
+
+footer {
+    margin-top: 100px;
+    padding-top: 50px;
+    padding-bottom: 45px;
+    background-color: var(--azulOscuro);
+    color: var(--blanco);
+    font-family: 'avenir-light', sans-serif;
+}
+
+footer .contacto {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--blanco);
+    font-family: 'nexa', sans-serif;
+}
+
+
+footer .invitacion {
+    font-size: 14px;
+    font-weight: 100;
+    color: var(--blanco);
+    font-family: 'nexa-light', sans-serif;
+}
+
+#logo-footer {
+    height: 100px;
+}
+
+#banner-img {
+    background-image: url('./imagenes/bg-noti.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+}
+
+.azul {
+    color: var(--azulOscuro);
+}
+
+.verde {
+    color: var(--verde);
+}
+
+.subtitulo {
+    font-size: 24px;
+    font-weight: 600;
+    font-family: 'avenir', sans-serif;
+}
+
+.titulo {
+    font-weight: 600;
+    font-family: 'avenir', sans-serif;
+}
+
+.parrafo-noticia {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'astetico', sans-serif;
+    text-align: justify;
+}
+
+#servicios {
+    background-color: yellow;
+    border-radius: 32px;
+
+}
+
+#servicios img {
+    border-radius: 32px;
+    height: 250px;
+
+}
+
+#servicios p {
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'avenir', sans-serif;
+    color: var(--azulOscuro);
+    text-align: justify;
+}
+
+#servicios h2 {
+    font-weight: 600;
+    font-family: 'nexa', sans-serif;
+    color: var(--azulOscuro);
+    padding-top: 32px;
+}
+
+#servicios button {
+    background-color: var(--azulOscuro);
+    color: var(--blanco);
+    font-weight: 600;
+    font-family: 'nexa', sans-serif;
+    border: none;
+    border-radius: 32px;
+    font-size: 20px;
+    padding: 6px 44px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.titulo-servicio {
+    color: var(--azulOscuro);
+    padding-bottom: 50px;
+    padding-top: 25px;
+    font-family: 'nexa', sans-serif;
+}
+
+
+#contenedor-servicio {
+    background-color: var(--verdeClaro);
+    border-radius: 32px;
+    height: 150px;
+    padding: 10px 50px;
+}
+
+#contenedor-servicio h2 {
+    font-weight: 600;
+    font-family: 'nexa', sans-serif;
+    color: var(--azulOscuro);
+    font-size: 30px
+}
+
+#contenedor-servicio p {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'avenir', sans-serif;
+    color: var(--azulOscuro);
+    text-align: justify;
+}
+
+
+.titulo-servicio2 {
+    color: var(--azulOscuro);
+    padding-bottom: 15px;
+    padding-top: 25px;
+    font-family: 'nexa', sans-serif;
+}
+
+.contenido-equipo {
+    background-color: var(--azulOscuro);
+    padding: 14px 0;
+}
+
+.contenido-equipo h4 {
+    color: var(--verdeClaro);
+    font-size: 24px;
+    font-weight: 600;
+    font-family: 'astetico', sans-serif;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.contenido-equipo p {
+    color: var(--blanco);
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'astetico', sans-serif;
+    text-align: center;
+}
+
+.titulo-equipo {
+    padding-top: 100px;
+    font-size: 115px;
+    font-family: 'nexa', sans-serif;
+    color: var(--azulOscuro);
+}
+
+.verdeClaro {
+    color: var(--verdeClaro);
+}
+
+.verdeOscuro {
+    color: var(--verOscuro);
+}
+
+.parrafo-equipo {
+    padding-top: 40px;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'astetico', sans-serif;
+    text-align: justify;
+    width: 98%;
+    margin: auto;
+}
+
+#formulario-container h2 {
+    font-size: 42px;
+    font-weight: 600;
+    font-family: 'nexa', sans-serif;
+    color: var(--azulOscuro);
+    padding-top: 100px;
+}
+
+#formulario-container .conversar {
+    color: var(--azulOscuro);
+    font-family: "nexa-light", sans-serif;
+    padding-left: 10px;
+}
+
+#formulario-container button {
+    background-color: var(--verde) !important;
+    color: var(--azulOscuro);
+    font-weight: 600;
+    font-family: 'nexa', sans-serif;
+    border: none;
+    border-radius: 32px;
+    font-size: 20px;
+    padding: 10px 80px;
+}
+
+input,
+textarea {
+    background-color: #F6F6F6 !important;
+    border: none !important;
+    padding: 15px 15px !important;
+    color: #C4C4C4 !important;
+}
+
+#label-mail {
+    width: 12% !important;
+    position: relative;
+    left: -64px;
+}
+
+#mail {
+    position: relative;
+    left: -49px;
+}
+
+@media (max-width: 767px) {
+    #banner {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    #banner h2 {
+        font-size: 48px;
+    }
+
+    #banner p {
+        width: 100%;
+        font-size: 18px;
+    }
+
+    #banner img {
+        height: 330px;
+        position: relative;
+        margin-top: 25px;
+        top: 0;
+    }
+
+    #logo-footer {
+        height: 80px;
+        margin-top: 15px;
+    }
+
+    #encuestas h2 {
+        font-size: 28px;
+    }
+
+    #vernoticias {
+        top: 0;
+        text-align: start;
+    }
+
+    #vernoticias2 {
+        top: 0;
+        text-align: end;
+    }
+
+    #vernoticias img {
+        height: 28px;
+        margin-left: 15px;
+    }
+
+    #vernoticias2 img {
+        height: 28px;
+        margin-left: 15px;
+    }
+
+    #row-encuestas h3 {
+        font-size: 20px;
+    }
+
+    #row-encuestas .parrafo {
+        font-size: 16px;
+    }
+
+    footer {
+        margin-top: 25px;
+        padding-top: 25px;
+    }
+
+    #row-footer img {
+        height: 40px;
+    }
+
+    .titulo-equipo {
+        padding-top: 25px;
+        font-size: 70px;
+        padding-bottom: 25px;
+    }
+
+    .parrafo-equipo {
+        width: 100%;
+        font-size: 18px;
+    }
+
+    #contenedor-servicio {
+        height: 100%;
+        padding-top: 20px;
+    }
+
+    #contenedor-servicio h2 {
+        font-size: 26px;
+    }
+
+    #mail {
+        left: 0;
+    }
+
+    #label-mail {
+        width: 100% !important;
+        position: relative;
+        left: 0;
+    }
+
+    #formulario-container h2 {
+        padding-top: 0px;
+    }
+
+    #servicios h2 {
+        font-size: 24px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    #servicios p {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    #servicios button {
+        margin-bottom: 25px;
+    }
+
+    .parrafo-noticia {
+        font-size: 16px;
+    }
+
+    .publicacion {
+        width: 100%;
+    }
+}
