@@ -125,6 +125,7 @@
     cursor: pointer;
     position: relative;
     top: 100px;
+    color: #000;
 }
 
 #vernoticias2 img {
@@ -459,6 +460,14 @@ textarea {
 #mail {
     position: relative;
     left: -49px;
+}
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none; 
 }
 
 @media (max-width: 767px) {
