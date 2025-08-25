@@ -262,7 +262,7 @@ footer .invitacion {
 }
 
 #banner-img {
-    background-image: url('./imagenes/bg-noti.png');
+    background-image: url('./imagenes/bg-noti.webp');
     background-repeat: no-repeat;
     background-size: cover;
     height: 600px;
