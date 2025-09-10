@@ -1,0 +1,630 @@
+// =============================================
+// VARIABLES
+// =============================================
+
+// Colores
+$verde: #FFFF00;
+$azul: #254166;
+$azulOscuro: #1A375D;
+$azulClaro: #4E7AB4;
+$blanco: #FFFFFF;
+$rojo: #EB6D3E;
+$verdeClaro: #E7EB1D;
+$verOscuro: #B4B42A;
+
+// Fuentes
+$nexa: 'nexa', sans-serif;
+$nexa-light: 'nexa-light', sans-serif;
+$avenir: 'avenir', sans-serif;
+$avenir-light: 'avenir-light', sans-serif;
+$astetico: 'astetico', sans-serif;
+
+// Breakpoints
+$mobile: 767px;
+
+// Mixins
+@mixin mobile {
+  @media (max-width: #{$mobile}) {
+    @content;
+  }
+}
+
+// =============================================
+// FUENTES
+// =============================================
+@font-face {
+  font-family: 'nexa';
+  src: url('../font/Nexa-Heavy.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'nexa-light';
+  src: url('../font/Nexa-ExtraLight.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'avenir';
+  src: url('../font/Avenir-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'avenir-light';
+  src: url('../font/Avenir-Light.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'astetico';
+  src: url('../font/aestetico-regular.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+// =============================================
+// ESTILOS GENERALES
+// =============================================
+a, a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+}
+
+// =============================================
+// COMPONENTES
+// =============================================
+
+// Navbar
+.navbar {
+  background-color: $azulOscuro !important;
+  padding-top: 30px;
+  font-family: $avenir-light;
+
+  #flecha {
+    height: 12px;
+    margin-left: 10px;
+  }
+
+  #logo {
+    height: 60px;
+    position: relative;
+  }
+
+  a {
+    color: $blanco !important;
+  }
+}
+
+// Banner
+#banner {
+  background-color: $azulOscuro;
+  padding-top: 100px;
+
+  h2 {
+    color: $verde;
+    font-size: 75px;
+    font-weight: 600;
+    font-family: $nexa;
+  }
+
+  p {
+    color: $blanco;
+    font-family: $avenir;
+    width: 78%;
+    font-size: 18px;
+    text-align: start;
+  }
+
+  img {
+    height: 600px;
+    position: relative;
+    top: -75px;
+  }
+
+  .btn {
+    background-color: $verde;
+    color: $azulOscuro;
+    font-weight: 600;
+    font-family: $nexa;
+    border: none;
+    border-radius: 32px;
+    font-size: 32px;
+    padding: 6px 44px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    margin-top: 15px;
+  }
+
+  @include mobile {
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+    h2 {
+      font-size: 48px;
+    }
+
+    p {
+      width: 100%;
+      font-size: 18px;
+    }
+
+    img {
+      height: 330px;
+      position: relative;
+      margin-top: 25px;
+      top: 0;
+    }
+  }
+}
+
+// Enlaces de noticias
+#vernoticias {
+  font-size: 16px;
+  font-weight: 600;
+  font-family: $nexa;
+  cursor: pointer;
+  position: relative;
+  color: black;
+
+  img {
+    height: 35px;
+    margin-left: 15px;
+  }
+
+  @include mobile {
+    top: 0;
+    text-align: start;
+
+    img {
+      height: 28px;
+      margin-left: 15px;
+    }
+  }
+}
+
+#vernoticias2 {
+  font-size: 16px;
+  font-weight: 600;
+  font-family: $nexa;
+  cursor: pointer;
+  position: relative;
+  top: 100px;
+  color: #000;
+
+  img {
+    height: 35px;
+    margin-left: 15px;
+  }
+
+  @include mobile {
+    top: 0;
+    text-align: end;
+
+    img {
+      height: 28px;
+      margin-left: 15px;
+    }
+  }
+}
+
+// Encuestas
+#encuestas {
+  h2 {
+    font-size: 36px;
+    font-weight: 600;
+    font-family: $nexa;
+    color: $azulOscuro;
+    
+    @include mobile {
+      font-size: 28px;
+    }
+  }
+}
+
+.card {
+  border-radius: 32px;
+  background-color: $verde;
+  border: none;
+
+  &-img-top {
+    border-radius: 32px;
+  }
+
+  &-title {
+    font-size: 24px;
+    font-weight: 600;
+    font-family: $nexa;
+    color: $azulOscuro;
+  }
+}
+
+#reloj {
+  height: 28px;
+  margin-right: 10px;
+}
+
+#encuestas .card-text {
+  font-size: 22px;
+  font-weight: 100;
+  font-family: $avenir-light;
+  color: $azulOscuro;
+  margin-left: 14px;
+}
+
+#row-encuestas {
+  width: 90%;
+
+  h3 {
+    font-size: 24px;
+    font-weight: 600;
+    font-family: $nexa;
+    color: $azulOscuro;
+    
+    @include mobile {
+      font-size: 20px;
+    }
+  }
+
+  .parrafo {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: $avenir;
+    color: $azulOscuro;
+    margin-top: 10px;
+    
+    @include mobile {
+      font-size: 16px;
+    }
+  }
+}
+
+#encuestas button {
+  background-color: $azulOscuro;
+  color: $blanco;
+  font-weight: 600;
+  font-family: $nexa;
+  border: none;
+  border-radius: 32px;
+  font-size: 20px;
+  width: 100%;
+  padding: 6px 0;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+// Etiquetas
+.padel {
+  background-color: $azulClaro;
+  padding: 6px 0;
+  font-size: 16px;
+  font-family: $avenir;
+  font-weight: 400;
+}
+
+.publicacion {
+  background-color: $verdeClaro;
+  padding: 6px 0;
+  font-size: 16px;
+  font-family: $avenir;
+  font-weight: 400;
+  width: 44%;
+  color: $azulOscuro !important;
+  
+  @include mobile {
+    width: 100%;
+  }
+}
+
+.basque {
+  background-color: $rojo;
+  padding: 6px 0;
+  font-size: 16px;
+  font-family: $avenir;
+  font-weight: 400;
+}
+
+// Footer
+footer {
+  margin-top: 100px;
+  padding-top: 50px;
+  padding-bottom: 45px;
+  background-color: $azulOscuro;
+  color: $blanco;
+  font-family: $avenir-light;
+  
+  @include mobile {
+    margin-top: 25px;
+    padding-top: 25px;
+  }
+
+  .contacto {
+    font-size: 18px;
+    font-weight: 600;
+    color: $blanco;
+    font-family: $nexa;
+  }
+
+  .invitacion {
+    font-size: 14px;
+    font-weight: 100;
+    color: $blanco;
+    font-family: $nexa-light;
+  }
+}
+
+#logo-footer {
+  height: 100px;
+  
+  @include mobile {
+    height: 80px;
+    margin-top: 15px;
+  }
+}
+
+#row-footer img {
+  @include mobile {
+    height: 40px;
+  }
+}
+
+// Banner con imagen de fondo
+#banner-img {
+  background-image: url('../img/bg-noti.webp');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+}
+
+// Utilidades de color
+.azul {
+  color: $azulOscuro;
+}
+
+.verde {
+  color: $verde;
+}
+
+.verdeClaro {
+  color: $verdeClaro;
+}
+
+.verdeOscuro {
+  color: $verOscuro;
+}
+
+// Tipografías
+.subtitulo {
+  font-size: 24px;
+  font-weight: 600;
+  font-family: $avenir;
+}
+
+.titulo {
+  font-weight: 600;
+  font-family: $avenir;
+}
+
+.parrafo-noticia {
+  font-size: 18px;
+  font-weight: 400;
+  font-family: $astetico;
+  text-align: justify;
+  
+  @include mobile {
+    font-size: 16px;
+  }
+}
+
+// Servicios
+#servicios {
+  background-color: yellow;
+  border-radius: 32px;
+
+  img {
+    border-radius: 32px;
+    height: 250px;
+  }
+
+  p {
+    font-size: 15px;
+    font-weight: 400;
+    font-family: $avenir;
+    color: $azulOscuro;
+    text-align: justify;
+    
+    @include mobile {
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+  }
+
+  h2 {
+    font-weight: 600;
+    font-family: $nexa;
+    color: $azulOscuro;
+    padding-top: 32px;
+    
+    @include mobile {
+      font-size: 24px;
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+  }
+
+  button {
+    background-color: $azulOscuro;
+    color: $blanco;
+    font-weight: 600;
+    font-family: $nexa;
+    border: none;
+    border-radius: 32px;
+    font-size: 20px;
+    padding: 6px 44px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    
+    @include mobile {
+      margin-bottom: 25px;
+    }
+  }
+}
+
+.titulo-servicio {
+  color: $azulOscuro;
+  padding-bottom: 50px;
+  padding-top: 25px;
+  font-family: $nexa;
+}
+
+.titulo-servicio2 {
+  color: $azulOscuro;
+  padding-bottom: 15px;
+  padding-top: 25px;
+  font-family: $nexa;
+}
+
+#contenedor-servicio {
+  background-color: $verdeClaro;
+  border-radius: 32px;
+  height: 150px;
+  padding: 10px 50px;
+  
+  @include mobile {
+    height: 100%;
+    padding-top: 20px;
+  }
+
+  h2 {
+    font-weight: 600;
+    font-family: $nexa;
+    color: $azulOscuro;
+    font-size: 30px;
+    
+    @include mobile {
+      font-size: 26px;
+    }
+  }
+
+  p {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: $avenir;
+    color: $azulOscuro;
+    text-align: justify;
+  }
+}
+
+// Equipo
+.contenido-equipo {
+  background-color: $azulOscuro;
+  padding: 14px 0;
+
+  h4 {
+    color: $verdeClaro;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: $astetico;
+    text-align: center;
+    margin-bottom: 0;
+  }
+
+  p {
+    color: $blanco;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: $astetico;
+    text-align: center;
+  }
+}
+
+.titulo-equipo {
+  padding-top: 100px;
+  font-size: 115px;
+  font-family: $nexa;
+  color: $azulOscuro;
+  
+  @include mobile {
+    padding-top: 25px;
+    font-size: 70px;
+    padding-bottom: 25px;
+  }
+}
+
+.parrafo-equipo {
+  padding-top: 40px;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: $astetico;
+  text-align: justify;
+  width: 98%;
+  margin: auto;
+  
+  @include mobile {
+    width: 100%;
+    font-size: 18px;
+  }
+}
+
+// Formulario
+#formulario-container {
+  h2 {
+    font-size: 42px;
+    font-weight: 600;
+    font-family: $nexa;
+    color: $azulOscuro;
+    padding-top: 100px;
+    
+    @include mobile {
+      padding-top: 0px;
+    }
+  }
+
+  .conversar {
+    color: $azulOscuro;
+    font-family: $nexa-light;
+    padding-left: 10px;
+  }
+
+  button {
+    background-color: $verde !important;
+    color: $azulOscuro;
+    font-weight: 600;
+    font-family: $nexa;
+    border: none;
+    border-radius: 32px;
+    font-size: 20px;
+    padding: 10px 80px;
+  }
+}
+
+// Campos de formulario
+input, textarea {
+  background-color: #F6F6F6 !important;
+  border: none !important;
+  padding: 15px 15px !important;
+  color: #C4C4C4 !important;
+}
+
+#label-mail {
+  width: 12% !important;
+  position: relative;
+  left: -64px;
+  
+  @include mobile {
+    width: 100% !important;
+    position: relative;
+    left: 0;
+  }
+}
+
+#mail {
+  position: relative;
+  left: -49px;
+  
+  @include mobile {
+    left: 0;
+  }
+}
+
+
