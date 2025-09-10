@@ -11,35 +11,35 @@
 
 @font-face {
     font-family: 'nexa';
-    src: url('./fuentes/Nexa-Heavy.ttf');
+    src: url('../font/Nexa-Heavy.ttf');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'nexa-light';
-    src: url('./fuentes/Nexa-ExtraLight.ttf');
+    src: url('../font/Nexa-ExtraLight.ttf');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'avenir';
-    src: url('./fuentes/Avenir-Regular.ttf');
+    src: url('../font/Avenir-Regular.ttf');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'avenir-light';
-    src: url('./fuentes/Avenir-Light.ttf');
+    src: url('../font/Avenir-Light.ttf');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'astetico';
-    src: url('./fuentes/aestetico-regular.otf');
+    src: url('../font/aestetico-regular.otf');
     font-weight: normal;
     font-style: normal;
 }
@@ -58,7 +58,6 @@
 .navbar #logo {
     height: 60px;
     position: relative;
-    top: 10px;
 }
 
 .navbar a {
@@ -110,6 +109,7 @@
     font-family: 'nexa';
     cursor: pointer;
     position: relative;
+    color: black;
 }
 
 #vernoticias img {
@@ -262,7 +262,7 @@ footer .invitacion {
 }
 
 #banner-img {
-    background-image: url('./imagenes/bg-noti.webp');
+    background-image: url('../img/bg-noti.webp');
     background-repeat: no-repeat;
     background-size: cover;
     height: 600px;

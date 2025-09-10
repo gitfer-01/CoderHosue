@@ -1,0 +1,56 @@
+#servicios {
+  background-color: yellow;
+  border-radius: 32px;
+
+  img { border-radius: 32px; height: 250px; }
+
+  p {
+    font-size: 15px;
+    font-weight: 400;
+    font-family: 'avenir', sans-serif;
+    color: $azul-oscuro;
+    text-align: justify;
+  }
+
+  h2 {
+    font-weight: 600;
+    font-family: 'nexa', sans-serif;
+    color: $azul-oscuro;
+    padding-top: 32px;
+  }
+
+  button {
+    background-color: $azul-oscuro;
+    color: $blanco;
+    font-weight: 600;
+    font-family: 'nexa', sans-serif;
+    border: none;
+    border-radius: 32px;
+    font-size: 20px;
+    padding: 6px 44px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    @include transition;
+  }
+}
+
+#contenedor-servicio {
+  background-color: $verde-claro;
+  border-radius: 32px;
+  height: 150px;
+  padding: 10px 50px;
+
+  h2 {
+    font-weight: 600;
+    font-family: 'nexa', sans-serif;
+    color: $azul-oscuro;
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 14px;
+    font-weight: 400;
+    font-family: 'avenir', sans-serif;
+    color: $azul-oscuro;
+    text-align: justify;
+  }
+}

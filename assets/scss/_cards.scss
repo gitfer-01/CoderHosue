@@ -1,0 +1,45 @@
+.card {
+  border-radius: 32px;
+  background-color: $verde;
+  border: none;
+
+  &-img-top { border-radius: 32px; }
+
+  &-title {
+    font-size: 24px;
+    font-weight: 600;
+    font-family: 'nexa', sans-serif;
+    color: $azul-oscuro;
+  }
+}
+
+#encuestas {
+  h2 {
+    font-size: 36px;
+    font-weight: 600;
+    font-family: 'nexa', sans-serif;
+    color: $azul-oscuro;
+  }
+
+  .card-text {
+    font-size: 22px;
+    font-weight: 100;
+    font-family: 'avenir-light', sans-serif;
+    color: $azul-oscuro;
+    margin-left: 14px;
+  }
+
+  button {
+    background-color: $azul-oscuro;
+    color: $blanco;
+    font-weight: 600;
+    font-family: 'nexa', sans-serif;
+    border: none;
+    border-radius: 32px;
+    font-size: 20px;
+    width: 100%;
+    padding: 6px 0;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    @include transition;
+  }
+}
